@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+
+    header svg {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+}
+

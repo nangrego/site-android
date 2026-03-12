@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-screen.css">
+</head>
+<body>
+    <header>
+        <h1>Site Responsivo</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" onclick="clickMenu()">
+        <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+        </svg>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <body>
+            <h2>Bem-vindo ao nosso site responsivo!</h2>
+            <p>Este é um exemplo de um site que se adapta a diferentes tamanhos de tela, proporcionando uma experiência agradável em dispositivos móveis e desktops.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quod fugit ullam quo ab facilis voluptatum cupiditate, accusantium quam, doloremque harum eius amet veniam esse dicta natus odio vitae sunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci fuga illo, accusamus nostrum et eligendi consequuntur sit officiis ratione beatae nisi at debitis cupiditate, alias minima possimus molestiae laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur harum necessitatibus nihil, esse id incidunt totam repellendus! Illum molestiae dolorum voluptatibus a assumenda veniam sit, labore consectetur culpa facere!</p>
+        </body>
+    </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

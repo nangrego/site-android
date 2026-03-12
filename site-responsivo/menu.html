@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu teste</title>
+    <style>
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        position: absolute;
+        top: -0px;
+    }
+
+    /* Classe a ser adicionada via JS ou :hover */
+    .menu.aberto {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        top: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="document.querySelector('.menu').classList.toggle('aberto')">Menu</button>
+    <div class="menu">
+    <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+    </ul>
+    </div>
+    <main>
+        <h1>Bem-vindo ao nosso site</h1>
+        <p>Este é um exemplo simples de menu responsivo.</p>
+    </main>
+</body>
+</html>
